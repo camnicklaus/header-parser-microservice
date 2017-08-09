@@ -56,7 +56,7 @@ app.get(api, function(req, res, next) {
   agent = useragent.parse(req.headers['user-agent']);
   let OS = agent.os.family + " " + agent.os.major + "." + agent.os.minor;
   let browser = agent.family + " " + agent.major + "." + agent.minor;
-  ipAddress = req.ip;
+  ipAddress = req.headers['x-forwarded-for'].split(',')[0];
   
   res.json({ "ipaddress": ipAddress, "language": language[0], "operating system": OS, "browser": browser })
 })
