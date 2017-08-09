@@ -1,0 +1,21 @@
+{
+  "name": "fcc-learn-npm-package-json",
+  "description": "my fcc request header parser microservice",
+  "dependencies": {
+    "express": "^4.15.4",
+    "body-parser": "^1.17.2",
+    "cors": "2.8.4",
+    "useragent": "2.2.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "4.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/camnicklaus/header-parser-microservice"
+  }
+}
